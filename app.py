@@ -30,16 +30,16 @@ def main():
     </div>
     """
     st.markdown(html_temp,unsafe_allow_html=True)
-    age=st.number_input(label="Age",min_value=18)
+    age=st.number_input(label="Age",min_value=15)
     gender = st.selectbox('Select Gender',('Male','Female'))
     if gender=='Female':
     	gender=1
     elif gender=='Male':
     	gender=2
     height=st.number_input("Height",value=5.0)
-    weight=st.number_input("Weight",min_value=60)
-    ap_hi=st.number_input("Systolic blood pressure",min_value=120)
-    ap_lo=st.number_input("Diastolic blood pressure",min_value=80)
+    weight=st.number_input("Weight",min_value=40)
+    ap_hi=st.number_input("Systolic blood pressure",min_value=0)
+    ap_lo=st.number_input("Diastolic blood pressure",min_value=0)
     cholesterol = st.selectbox("Cholesterol",("Normal","Above Normal", "Well Above Normal"))
     if cholesterol=="Normal":
     	cholesterol=1
