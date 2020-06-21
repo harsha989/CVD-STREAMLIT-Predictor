@@ -76,7 +76,7 @@ def main():
         st.success("You Don't Have CardioVascularDisease")
     elif result==1:
     	st.success("You Have CardioVascularDisease")
-   st.sidebar.image(image,use_column_width=True)
+    st.sidebar.image(image,use_column_width=True)
     st.sidebar.markdown(
                 "[Kaggle Dataset](https://www.kaggle.com/sulianova/cardiovascular-disease-dataset)",unsafe_allow_html=True)
     st.sidebar.image(image1,use_column_width=True)
