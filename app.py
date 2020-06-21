@@ -38,8 +38,8 @@ def main():
     	gender=2
     height=st.number_input("Height",value=5.0)
     weight=st.number_input("Weight",min_value=40)
-    ap_hi=st.number_input("Systolic blood pressure",min_value=0)
-    ap_lo=st.number_input("Diastolic blood pressure",min_value=0)
+    ap_hi=st.number_input("Systolic blood pressure",min_value=10)
+    ap_lo=st.number_input("Diastolic blood pressure",min_value=10)
     cholesterol = st.selectbox("Cholesterol",("Normal","Above Normal", "Well Above Normal"))
     if cholesterol=="Normal":
     	cholesterol=1
