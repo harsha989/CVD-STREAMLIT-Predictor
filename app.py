@@ -71,23 +71,23 @@ def main():
         st.success("You Don't Have CardioVascularDisease")
     elif result==1:
     	st.success("You Have CardioVascularDisease")
-    #st.sidebar.markdown(
-    	        #"<style>.center {display: block;margin-left: auto;margin-right: auto;width: 100%;}</style>"
-    			#"<style>.div-2 {height:220px;}</style>"
-    			#"<div class='div-2',align='center'><br>"
-    			#"<a href='https://www.kaggle.com/sulianova/cardiovascular-disease-dataset'>"
-    			#"<img src='https://www.docwirenews.com/wp-content/uploads/2019/12/Oncology_12.3.19.jpg' alt='Landscape' height='200' width='306'></a></div>",unsafe_allow_html=True)
-    #st.sidebar.markdown(
-    	    	#"<style>.center {display: block;margin-left: auto;margin-right: auto;width: 100%;}</style>"
-    			#"<style>.div-2 {height:220px;}</style>"
-    			#"<div class='div-2',align='center'><br>"
-    			#"<a href='https://www.linkedin.com/in/mittapallisriharsha'>"
-    			#"<img src='https://lh3.googleusercontent.com/z0gMa0aRAkLxjS-lVaSOO1Ygb48rttOcR5iRpgJPTM6_enkfeCuN37JWm_9qcHJaJw' alt='Landscape' height='200' width='306'></a></div>",unsafe_allow_html=True)
-    #st.sidebar.markdown(
-    	        #"<style>.center {display: block;margin-left: auto;margin-right: auto;width: 100%;}</style>"
-    			#"<style>.div-2 {height:220px;}</style>"
-    			#"<div class='div-2',align='center'><br>"
-    			#"<a href='https://github.com/harsha989/CVD-Streamlit'>"
-    			#"<img src='https://i.blogs.es/61cb99/github/450_1000.jpg' alt='Landscape' height='200' width='306'></a></div>",unsafe_allow_html=True)
+    st.sidebar.markdown(
+    	        "<style>.center {display: block;margin-left: auto;margin-right: auto;width: 100%;}</style>"
+    			"<style>.div-2 {height:220px;}</style>"
+    			"<div class='div-2',align='center'><br>"
+    			"<a href='https://www.kaggle.com/sulianova/cardiovascular-disease-dataset'>"
+    			"<img src='https://github.com/harsha989/hello/blob/master/Oncology_12.3.19.JPG' alt='Landscape' height='200' width='306'></a></div>",unsafe_allow_html=True)
+    st.sidebar.markdown(
+    	    	"<style>.center {display: block;margin-left: auto;margin-right: auto;width: 100%;}</style>"
+    			"<style>.div-2 {height:220px;}</style>"
+    			"<div class='div-2',align='center'><br>"
+    			"<a href='https://www.linkedin.com/in/mittapallisriharsha'>"
+    			"<img src='https://github.com/harsha989/hello/blob/master/Oncology_12.3.19.JPG' alt='Landscape' height='200' width='306'></a></div>",unsafe_allow_html=True)
+    st.sidebar.markdown(
+    	        "<style>.center {display: block;margin-left: auto;margin-right: auto;width: 100%;}</style>"
+    			"<style>.div-2 {height:220px;}</style>"
+    			"<div class='div-2',align='center'><br>"
+    			"<a href='https://github.com/harsha989/CVD-Streamlit'>"
+    			"<img src='https://github.com/harsha989/hello/blob/master/Oncology_12.3.19.JPG' alt='Landscape' height='200' width='306'></a></div>",unsafe_allow_html=True)
 if __name__=='__main__':
     main()
