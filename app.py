@@ -2,6 +2,11 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
+from PIL import Image
+
+image = Image.open('images/Oncology_12.3.19.jpg')
+image1 = Image.open('images/linkedin.png')
+image2 = Image.open('images/Github.jpg')
 
 # Load the SVM Classifier model
 filename = 'LR.pkl'
@@ -71,23 +76,14 @@ def main():
         st.success("You Don't Have CardioVascularDisease")
     elif result==1:
     	st.success("You Have CardioVascularDisease")
+   st.sidebar.image(image,use_column_width=True)
     st.sidebar.markdown(
-    	        "<style>.center {display: block;margin-left: auto;margin-right: auto;width: 100%;}</style>"
-    			"<style>.div-2 {height:220px;}</style>"
-    			"<div class='div-2',align='center'><br>"
-    			"<a href='https://www.kaggle.com/sulianova/cardiovascular-disease-dataset'>"
-    			"<img src='https://github.com/harsha989/hello/blob/master/Oncology_12.3.19.jpg' alt='Landscape' height='200' width='306'></a></div>",unsafe_allow_html=True)
+                "[Kaggle Dataset](https://www.kaggle.com/sulianova/cardiovascular-disease-dataset)",unsafe_allow_html=True)
+    st.sidebar.image(image1,use_column_width=True)
     st.sidebar.markdown(
-    	    	"<style>.center {display: block;margin-left: auto;margin-right: auto;width: 100%;}</style>"
-    			"<style>.div-2 {height:220px;}</style>"
-    			"<div class='div-2',align='center'><br>"
-    			"<a href='https://www.linkedin.com/in/mittapallisriharsha'>"
-    			"<img src='https://github.com/harsha989/hello/blob/master/Oncology_12.3.19.jpg' alt='Landscape' height='200' width='306'></a></div>",unsafe_allow_html=True)
+                "[Linkedin Profile](https://www.linkedin.com/in/mittapallisriharsha)",unsafe_allow_html=True)
+    st.sidebar.image(image2,use_column_width=True)
     st.sidebar.markdown(
-    	        "<style>.center {display: block;margin-left: auto;margin-right: auto;width: 100%;}</style>"
-    			"<style>.div-2 {height:220px;}</style>"
-    			"<div class='div-2',align='center'><br>"
-    			"<a href='https://github.com/harsha989/CVD-Streamlit'>"
-    			"<img src='https://github.com/harsha989/hello/blob/master/Oncology_12.3.19.jpg' alt='Landscape' height='200' width='306'></a></div>",unsafe_allow_html=True)
+                "[Github Page](https://github.com/harsha989/CVD-Streamlit)",unsafe_allow_html=True)
 if __name__=='__main__':
     main()
