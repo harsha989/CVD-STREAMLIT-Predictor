@@ -13,8 +13,8 @@ def predict(age,gender,height,weight,ap_hi,ap_lo,cholesterol,gluc,smoke,alco,act
 	return prediction
 
 def local_css(file_name):
-    #with open(file_name) as f:
-        #st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+    with open(file_name) as f:
+        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 local_css("styles.css")
 
