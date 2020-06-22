@@ -84,6 +84,6 @@ def main():
                 "[Linkedin Profile](https://www.linkedin.com/in/mittapallisriharsha)",unsafe_allow_html=True)
     st.sidebar.image(image2,use_column_width=True)
     st.sidebar.markdown(
-                "[Github Page](https://github.com/harsha989/CVD-Streamlit)",unsafe_allow_html=True)
+                "[Github Page](https://github.com/harsha989/CVD-STREAMLIT-Predictor)",unsafe_allow_html=True)
 if __name__=='__main__':
     main()
